@@ -7,14 +7,19 @@ public class QueueExample : MonoBehaviour
 {
     [SerializeField]
     private TextMeshProUGUI queueDebug;
-     void Start()
+    public GameObject cube;
+    public GameObject capsule;
+    int i = 0;
+    int j = 1;
+
+    void Start()
     {
         Queue queue = new Queue();
-        queue.Enqueue("x");
-        queue.Enqueue("y");
-        queue.Enqueue("z");
-        queue.Enqueue("a");
-        queue.Enqueue("b");
+        queue.Enqueue(cube);
+        queue.Enqueue(capsule);
+      //  queue.Enqueue("z");
+       // queue.Enqueue("a");
+       // queue.Enqueue("b");
         ShowInformationInQueue(queue);
         queue.Dequeue();
         ShowInformationInQueue(queue);
@@ -24,13 +29,16 @@ public class QueueExample : MonoBehaviour
     }
     private void ShowInformationInQueue(Queue queue)
     {
-        queueDebug.text += ".......";
-        foreach(var queueitem in queue)
+        //queueDebug.text += ".......";
+        foreach(GameObject queueitem in queue)
 
         {
-            Debug.Log(queue.Count);
+            i = i + 2;
+            j = j + 2;
+            // Debug.Log(queue.Count);
             //stackDebug.text = "\n";
-            queueDebug.text += $"{queueitem}\n";
+            Instantiate(queueitem, transform.position + new Vector3(0, i, 0), Quaternion.identity);
+          //  queueDebug.text += $"{queueitem}\n";
         }
     }
 }

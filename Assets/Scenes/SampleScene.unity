@@ -478,7 +478,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1223820136}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 261.6, y: 191, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -497,6 +497,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   queueDebug: {fileID: 2131801810}
+  cube: {fileID: 4465283563495119670, guid: 79e0614346ba6594da785b47ab228e71, type: 3}
+  capsule: {fileID: 5882628835461722931, guid: 2ad3ada472ee2c142ad0640c6e584e08, type: 3}
 --- !u!1 &1323468667
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,7 +515,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1323468668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -521,12 +523,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323468667}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c79db4e7aa739c84196626bf221d0051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   stackDebug: {fileID: 1546038687}
+  cube: {fileID: 4465283563495119670, guid: 79e0614346ba6594da785b47ab228e71, type: 3}
+  capsule: {fileID: 5882628835461722931, guid: 2ad3ada472ee2c142ad0640c6e584e08, type: 3}
 --- !u!4 &1323468669
 Transform:
   m_ObjectHideFlags: 0
@@ -535,7 +539,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323468667}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 261.6, y: 191, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -759,7 +763,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1969161154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -964,7 +968,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 111.99187, y: -143.70555, z: 1.9629822, w: 0.0034332275}
+  m_margin: {x: 70.84396, y: -104.501236, z: 1.9629822, w: 0.0034332275}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
